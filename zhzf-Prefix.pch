@@ -1,0 +1,70 @@
+//
+//  zhzf-Prefix.pch
+//  SZZF
+//
+//  Created by Apple on 2018/1/22.
+//  Copyright © 2018年 Apple. All rights reserved.
+//
+
+#ifndef zhzf_Prefix_pch
+#define zhzf_Prefix_pch
+
+
+//百度地图头文件
+#import <BaiduMapAPI_Base/BMKBaseComponent.h>//引入base相关所有的头文件
+#import <BaiduMapAPI_Map/BMKMapComponent.h>//引入地图功能所有的头文件
+#import <BaiduMapAPI_Search/BMKSearchComponent.h>//引入检索功能所有的头文件
+#import <BaiduMapAPI_Location/BMKLocationComponent.h>//引入定位功能所有的头文件
+#import <BaiduMapAPI_Utils/BMKUtilsComponent.h>//引入计算工具所有的头文件
+#import <BaiduMapAPI_Map/BMKMapView.h>//只引入所需的单个头文件
+//百度地图appkey
+#define appkey @"9kd61fxf7IY3Fh5eOOE0DziLqTxgkNh8"
+#import "SDAutoLayout.h"
+#import "UIView+Toast.h"
+#import "HTTPTool.h"
+#import "MJRefresh.h"
+#import "SVProgressHUD.h"
+#import "AFNetworking.h"
+#import "MJExtension.h"
+#import "LGPhoto.h"
+#import "User.h"
+#import "StringUtils.h"
+#import "BRPickerView.h"
+#import "BaseModel.h"
+#import "BeventTypeModel.h"
+#import "BeventModel.h"
+#import "BeventModel2.h"
+#import "MJRefresh.h"
+#import "QuestionReportTableViewController.h"
+
+//网络请求链接
+#define kBaseUrl @"http://192.168.1.10:8080/ZHZL/open/"
+
+#define kBaseImageUrl @"http://117.149.146.66:88/upimage/"
+
+#define kSZXZBaseUrl @"http://117.149.146.66:88/SZXZ/open/"
+
+
+//    public static final String URL_CONTEXTPATH = "http://192.168.1.103:8080/ZHZL/open/";//小姚
+//    public static final String URL_CONTEXTPATH = "http://192.168.2.142:8080/ZHZL/open/";//王伟
+//    public static final String URL_CONTEXTPATH = "http://192.168.1.118:8080/ZHZL/open/";//涛姐姐
+//    public static final String URL_CONTEXTPATH = "http://192.168.1.222:8080/ZHZL/open/";//涛姐姐
+
+//    public static final String URL_CONTEXTPATH = "http://192.168.1.10:8080/ZHZL/open/";//测试服务器（内网）
+//    public static final String URL_IMAGE= "http://192.168.1.10:8080/upimage/";//测试服务器（内网）
+
+//    public static final String URL_CONTEXTPATH = "http://112.25.12.14:8081/ZHZL/open/";//测试服务器(外网)
+//    public static final String URL_IMAGE = "http://112.25.12.14:8081/upimage/";//测试服务器(外网)
+
+//    public static final String URL_CONTEXTPATH = "http://117.149.146.66:88/SZXZ/open/";//上传下达服务器(外网)
+//    public static final String URL_IMAGE = "http://117.149.146.66:88/upimage/";//上传下达服务器(外网)
+
+#define PageSize 2
+#define CurrentPage 0
+
+#define screenHeight [UIScreen mainScreen].bounds.size.height
+#define screenWidth [UIScreen mainScreen].bounds.size.width
+#define Height(str, width) [str boundingRectWithSize:CGSizeMake(width, 0) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15]} context:nil].size
+
+
+#endif /* zhzf_Prefix_pch */
