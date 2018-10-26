@@ -1,0 +1,14 @@
+//
+//  SuperStyleModel.h
+//  SZZF
+//
+//  Created by Apple on 2018/1/24.
+//  Copyright © 2018年 Apple. All rights reserved.
+//
+
+#import "BaseModel.h"
+
+@interface SuperStyleModel : BaseModel
+@property(nonatomic, strong)NSString *et_name;
+@property(nonatomic, assign)NSInteger et_id;
+@end
